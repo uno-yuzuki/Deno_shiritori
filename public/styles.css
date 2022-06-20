@@ -1,6 +1,6 @@
 body{
     background-image: url(イラスト2.png);
-    background-size:cover;
+    background-size:contain;;
     padding-left: 1em; 
     padding-right: 1em; 
 }
