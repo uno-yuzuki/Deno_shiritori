@@ -6,8 +6,8 @@ html {
 	background-size: cover;
 }
 body{
-    width: 160vh;
-    height: 90vh;
+    width: 90vh;
+    height: 160vh;
     object-fit: cover;
     padding-left: 1em; 
     padding-right: 1em; 
