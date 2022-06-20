@@ -16,8 +16,10 @@ serve(async (req) => {
     const requestJson = await req.json();
     const nextWord = requestJson.nextWord;
     
-    if (
-        nextWord.length >1  &&previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
+    if ( nextWord.length <2 ) {
+        return new Response("言葉になっていません", { status: 400 });
+      }
+    if (previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
         return new Response("前の単語に続いていません。", { status: 400 });
       }
 
