@@ -1,10 +1,11 @@
 body{
-    background-image: url(イラスト2.png);
-    background-size:cover;
+    
     padding-left: 1em; 
     padding-right: 1em; 
 }
 div#allpage{
+    background-image: url(イラスト2.png);
+    background-size:cover;
     width:80px;
 }
 
@@ -15,7 +16,7 @@ header{
     background-blend-mode:lighten;
     background-position:center;
     background-size:10%;
-    width: 100%;
+    width: 2000;
     height: 60px;
     align-items: center;
 }
