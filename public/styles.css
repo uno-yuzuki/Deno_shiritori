@@ -44,7 +44,6 @@ header{
 }
 
 .box{
-    padding: 0px 50px;
     display: flex;
     margin:10px;
     width:350px;
