@@ -45,7 +45,7 @@ header{
 
 .box{
     display: flex;
-    margin:10px;
+    margin:30px;
     width:350px;
     height:130px;
     background-size:cover;
