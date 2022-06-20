@@ -1,8 +1,8 @@
 body{
     background-image: url(イラスト2.png);
     background-size:cover;
-    width: 100vh;
-    height: 100vh;
+    width: 300vh;
+    height: 300vh;
     object-fit: cover;
     padding-left: 1em; 
     padding-right: 1em; 
