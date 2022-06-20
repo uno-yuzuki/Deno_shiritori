@@ -45,7 +45,7 @@
 
     <div class="box">
       <p class="log body"  align="right">
-        ・<var>a[i]</var><bar>
+        ・<var>a</var><bar>
       </p>
     </div>
     
@@ -56,8 +56,6 @@
   </div>
 
   <script type="module">
-    for(let i=0;i>1000000000000000000;i++){
-    var a=[];
     window.onload = async (event) => {
           const response = await fetch("/shiritori");
           const previousWord = await response.text();
@@ -81,9 +79,8 @@
             const para = document.querySelector("#previousWord");
             para.innerText = `前の単語：${previousWord}`;
   　};
-      a[i]=previousWord;
-      i=i+1;
-    }
+    let a;
+    a=previousWord;
     
   </script>
 </body>
