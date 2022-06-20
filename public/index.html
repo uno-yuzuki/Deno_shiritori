@@ -46,7 +46,7 @@
 
     <div class="box">
       <div class="log body"  align="right">
-        <output  id="previousWord" style="line-height:0;" >
+        <output  id="output1" style="line-height:0;" >
         </output>
       </div>
     </div>
@@ -82,7 +82,8 @@
             const para = document.querySelector("#previousWord");
             para.innerText = `前の単語：${previousWord}`;
   　};
-    
+    var output1;
+    output1.value = previousWord;
   </script>
 </body>
 
