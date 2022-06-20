@@ -5,7 +5,7 @@ body{
     padding-right: 1em; 
 }
 div#allpage{
-    width:80px;
+    width:10px;
 }
 
 header{
@@ -15,7 +15,7 @@ header{
     background-blend-mode:lighten;
     background-position:center;
     background-size:10%;
-    width: 2000px;
+    width: 1500px;
     height: 60px;
     align-items: center;
 }
