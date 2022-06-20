@@ -1,7 +1,10 @@
 body{
     background-image: url(イラスト2.png);
     background-size:cover;
-}
+    padding-left: 15em; 
+    padding-right: 15em; }
+div#allpage{width:1024px;
+
 header{
     display: flex;
     background-image: url(イラスト1.png);
