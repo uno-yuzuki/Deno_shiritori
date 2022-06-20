@@ -1,6 +1,11 @@
+html {
+	min-height: 100%;
+	background-image:url(イラスト2.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 body{
-    background-image: url(イラスト2.png);
-    background-size:cover;
     width: 160vh;
     height: 90vh;
     object-fit: cover;
