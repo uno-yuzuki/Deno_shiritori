@@ -45,6 +45,7 @@ header{
 
 .box{
     display: flex;
+    padding: 0px 90px; 
     margin:10px;
     width:350px;
     height:130px;
@@ -59,8 +60,8 @@ header{
 }
 .tango1{
     color: black;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 25px;
+
 }
 
 .gif{
