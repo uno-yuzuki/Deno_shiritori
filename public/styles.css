@@ -1,8 +1,8 @@
 body{
     background-image: url(イラスト2.png);
     background-size:cover;
-    width: 100vh;
-    height: 100vh;
+    width: 130vh;
+    height: 130vh;
     object-fit: cover;
     padding-left: 1em; 
     padding-right: 1em; 
@@ -44,14 +44,14 @@ header{
     font-size: 20px;
     padding: 0px 30px;
     color: rgb(189, 116, 20);
-    width: 700px;
+    width: 400px;
 }
 
 .setumei2{
     padding: 0px 50px;
     font-size: 15px;
     color: rgb(60, 51, 40);
-    width: 500px;
+    width: 400px;
 }
 
 .box{
