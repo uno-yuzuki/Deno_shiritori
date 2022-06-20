@@ -1,3 +1,68 @@
-body {
-    background: skyblue;
+body{
+    width: 100%;  height: 100%;
+    background :rgb(141, 221, 255);
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: aliceblue;
+    align-items: center;
+}
+.title{
+    padding: 0px 38px;
+    font-size:50px;
+    color: brown;
+}
+
+.card-container{
+    display:flex;
+    text-align:left;
+}
+
+.setumei{
+    text-align:left;
+    margin:30px;
+}
+
+.setumei1{
+    font-size: 20px;
+    padding: 0px 30px;
+    color: rgb(189, 116, 20);
+}
+
+.setumei2{
+    padding: 0px 50px;
+    font-size: 15px;
+    color: rgb(134, 117, 95);
+}
+.log body{
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    margin:10px;
+    width:350px;
+    height:400px;
+    background-size:cover;
+    background-color:rgba(255, 255, 255, 0.4);
+    background-blend-mode:lighten;
+    overflow-y:scroll;
+    border:4px solid #008b8b;
+}
+
+.tango{
+    padding: 20px 60px; 
+}
+.tango1{
+    color: black;
+    font-size: 20px;
+}
+
+.gif{
+    display: flex;
+    bottom:0%; 
+    left:0%;
+    align-items: flex-end;
 }
