@@ -53,7 +53,7 @@ header{
 }
 
 .setumei2{
-    padding: 0px 50px;
+    padding: 0px 40px;
     font-size: 15px;
     color: rgb(60, 51, 40);
     width: 400px;
@@ -61,7 +61,7 @@ header{
 
 .box{
     display: flex;
-    margin:150px;
+    margin:15px;
     width:350px;
     height:130px;
     background-size:cover;
