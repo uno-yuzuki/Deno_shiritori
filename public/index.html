@@ -7,21 +7,57 @@
 </head>
 
 <body>
-  <h1>しりとり</h1>
-  <p id="previousWord"></p>
-  <input id="nextWordInput" type="text" />
-  <button id="nextWordSendButton">送信</button>
+  
+  <header>
+    <h1 class="title">
+      ボッチ用無限しりとり
+    </h1>
+  </header>
+
+  <div class="card-container">
+    <div class="setumei">
+      <h2 class="setumei1" style="line-height:1;">
+        ＜概要＞<br>
+        ・このゲームはボッチの人が時間をつぶせるように作ったものです<br>
+        ・タイピングの練習をするためにも使えます<br>
+        ・自身の語彙力の幅を広げる事にも使えます。<br>
+      </h2>
+      <h3 class="setumei2" style="line-height:1;">
+        ＜ルール説明＞<br>
+        ・ボッチのためのモノであり、対戦相手はいません。<br>
+        ・常に自分で返しつ付けてください。<br>
+        ・ひらがなしか受け付けません。<br>
+        ・基本的には普通のしりとりと変わりません。<br>
+        ・同じ言葉は繰り返し使えます。<br>
+        ・最後に「ん」の付く言葉は入力できません<br>
+      </h3>
+
+      <div class="tango">
+        <p class="tango1" id="previousWord" style="line-height:0;">
+        </p>
+        <input id="nextWordInput" type="text" />
+        <button id="nextWordSendButton">
+          送信
+        </button>
+      </div>
+  
+    </div>
+
+    <div class="box">
+      <p class="log body"  align="right">
+      </p>
+    </div>
+    
+    <p class="gif">
+      <img src="帽子.gif" alt="サンプル" width="80px" heigh="80px">
+    </p>
+  
+  </div>
 
   <script type="module">
-     window.onload = async (event) => {
-        await fetch("/shiritori", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ nextWord: "りんご" })
-        });
-
-        const response = await fetch("/shiritori");
-        const previousWord = await response.text();
+    window.onload = async (event) => {
+          const response = await fetch("/shiritori");
+          const previousWord = await response.text();
 
         const para = document.querySelector("#previousWord");
         para.innerText = `前の単語：${previousWord}`;
@@ -41,7 +77,7 @@
 
             const para = document.querySelector("#previousWord");
             para.innerText = `前の単語：${previousWord}`;
-};
+  };
   </script>
 </body>
 
