@@ -55,11 +55,12 @@ header{
 }
 
 .tango{
-    padding: 20px 60px; 
+    padding: 20px 90px; 
 }
 .tango1{
     color: black;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .gif{
