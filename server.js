@@ -21,7 +21,7 @@ serve(async (req) => {
     if (previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
         return new Response("前の単語に続いていません。", { status: 400 });
       }
-    if ('ん'　===　nextWord.charAt(nextWord.length - 1)) {
+    if (nextWord.charAt(nextWord.length - 1)==='ん') {
       　return new Response("「ん」が付いています。", { status: 400 });
     }
 
