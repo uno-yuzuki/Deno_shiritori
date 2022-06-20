@@ -2,7 +2,6 @@ import { serve } from "https://deno.land/std@0.138.0/http/server.ts";
 import { serveDir } from "https://deno.land/std@0.138.0/http/file_server.ts";
 
 let previousWord = "しりとり";
-var NGWord = "ん";
 
 console.log("Listening on http://localhost:8000");
 serve(async (req) => {
@@ -22,7 +21,7 @@ serve(async (req) => {
     if (previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
         return new Response("前の単語に続いていません。", { status: 400 });
       }
-    if (nextWord.charAt(next.length - 1) == NGWord.charAt(0)) {
+    if (nextWord.charAt(next.length - 1) =="ん") {
       　return new Response("「ん」が付いています。", { status: 400 });
     }
 
