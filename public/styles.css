@@ -7,9 +7,7 @@ body{
     padding-left: 1em; 
     padding-right: 1em; 
 }
-div#allpage{
-    width:100px;
-}
+
 
 header{
     display: flex;
