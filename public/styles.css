@@ -2,18 +2,7 @@ html {
 	width: 1920;
 	height: 1080;
 	background-image:url(イラスト2.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-body{
 
-    padding-left: 1em; 
-    padding-right: 1em; 
-}
-
-div#allpage{
-    width:10px;
 }
 
 header{
