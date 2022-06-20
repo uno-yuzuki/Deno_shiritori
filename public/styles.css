@@ -2,7 +2,6 @@ html {
 	width: 1920;
 	height: 1080;
 	background-image:url(イラスト2.png);
-
 }
 
 header{
@@ -12,7 +11,7 @@ header{
     background-blend-mode:lighten;
     background-position:center;
     background-size:10%;
-    width: 600px;
+    width: 1800px;
     height: 60px;
     align-items: center;
 }
