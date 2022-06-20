@@ -17,7 +17,7 @@ serve(async (req) => {
     const nextWord = requestJson.nextWord;
     
     if (
-        nextWord.length >  &&previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
+        nextWord.length >1  &&previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
         return new Response("前の単語に続いていません。", { status: 400 });
       }
 
