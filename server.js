@@ -15,11 +15,9 @@ serve(async (req) => {
   if (req.method === "POST" && pathname === "/shiritori") {
     const requestJson = await req.json();
     const nextWord = requestJson.nextWord;
-    if (nextWord.length > 0 &&nextWord.charAt(next.length - 1) === notWord.charAt(0)) {
-      return new Response("「ん」が付いています。", { status: 400 });
-    }
+    
     if (
-        nextWord.length > 0 &&previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
+        nextWord.length >  &&previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
         return new Response("前の単語に続いていません。", { status: 400 });
       }
 
