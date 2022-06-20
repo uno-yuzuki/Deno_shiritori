@@ -14,7 +14,7 @@ body{
 }
 
 div#allpage{
-    width:10vh;
+    width:100px;
 }
 
 header{
@@ -24,13 +24,13 @@ header{
     background-blend-mode:lighten;
     background-position:center;
     background-size:10%;
-    width: 138vh;
-    height: 6vh;
+    width: 1380px;
+    height: 60px;
     align-items: center;
 }
 .title{
-    padding: 0vh 3.8vh;
-    font-size:5vh;
+    padding: 0px 38px;
+    font-size:50px;
     color: rgb(56, 201, 160);
 }
 
@@ -41,41 +41,41 @@ header{
 
 .setumei{
     text-align:left;
-    margin:3vh;
+    margin:30px;
     
 }
 
 .setumei1{
-    font-size: 2vh;
-    padding: 0vh 3vh;
+    font-size: 20px;
+    padding: 0px 30px;
     color: rgb(189, 116, 20);
-    width: 50vh;
+    width: 500px;
 }
 
 .setumei2{
-    padding: 0vh 5vh;
-    font-size: 1.5vh;
+    padding: 0px 50px;
+    font-size: 15px;
     color: rgb(60, 51, 40);
-    width: 40vh;
+    width: 400px;
 }
 
 .box{
     display: flex;
-    margin:15vh;
-    width:35vh;
-    height:13vh;
+    margin:150px;
+    width:350px;
+    height:130px;
     background-size:cover;
     background-color:rgba(255, 255, 255,1.0);
     background-blend-mode:lighten;
-    border:0.4vh solid #008b8b;
+    border:4px solid #008b8b;
 }
 
 .tango{
-    padding: 2vh 3vh; 
+    padding: 20px 30px; 
 }
 .tango1{
     color: black;
-    font-size: 2.5vh;
+    font-size: 25px;
 
 }
 
