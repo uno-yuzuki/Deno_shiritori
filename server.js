@@ -16,15 +16,15 @@ serve(async (req) => {
     const requestJson = await req.json();
     const nextWord = requestJson.nextWord;
     
-    if (nextWord.charAt(next.length - 1) === NGWord.charAt(0)) {
-      return new Response("「ん」が付いています。", { status: 400 });
-    }
     if ( nextWord.length <2 ) {
         return new Response("言葉になっていません", { status: 400 });
       }
     if (previousWord.charAt(previousWord.length - 1) !== nextWord.charAt(0)) {
         return new Response("前の単語に続いていません。", { status: 400 });
       }
+    if (nextWord.charAt(next.length - 1) == NGWord.charAt(0)) {
+      　return new Response("「ん」が付いています。", { status: 400 });
+    }
 
     previousWord = nextWord;
     return new Response(previousWord);
