@@ -1,8 +1,6 @@
 body{
     background-image: url(イラスト2.png);
-    background-position:center;
     background-size:cover;
-    height:450px;
 }
 header{
     display: flex;
