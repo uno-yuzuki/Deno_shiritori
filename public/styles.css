@@ -45,7 +45,6 @@ header{
 
 .box{
     display: flex;
-    padding: 0px 90px; 
     margin:10px;
     width:350px;
     height:130px;
@@ -56,7 +55,7 @@ header{
 }
 
 .tango{
-    padding: 20px 90px; 
+    padding: 20px 60px; 
 }
 .tango1{
     color: black;
