@@ -14,7 +14,6 @@
     </h1>
   </header>
 
-  <form oninput="o=a">
   <div class="card-container">
     <div class="setumei">
       <h2 class="setumei1" style="line-height:1;">
@@ -43,20 +42,12 @@
       </div>
   
     </div>
-
-    <div class="box">
-      <div class="log body"  align="right">
-        <output  id="output1" style="line-height:0;" >
-        </output>
-      </div>
-    </div>
     
     <p class="gif">
       <img src="帽子.gif" alt="サンプル" width="80px" heigh="80px">
     </p>
 
 　</div>
-　</from>
 
   <script type="module">
     window.onload = async (event) => {
@@ -82,12 +73,6 @@
             const para = document.querySelector("#previousWord");
             para.innerText = `前の単語：${previousWord}`;
   　};
-    function inputChange(event){
-      output1.innerText = nextWordInput;
-    }
-    let previousWord = document.getElementById('nextWordInput');
-    nextWordInput.addEventListener('change', inputChange);
-    let  output1= document.getElementById('output1');
   </script>
 </body>
 
