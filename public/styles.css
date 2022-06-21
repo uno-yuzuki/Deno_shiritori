@@ -74,10 +74,11 @@ header{
 }
 
 .tyui{
+	padding: 0px 30px;
 	font-size:5px;
-	coler:#ffff00;
+	col0r:rgb(255, 255, 0);;
 }
 
 .a{
-	coler:blue;
+	color:blue;
 }
