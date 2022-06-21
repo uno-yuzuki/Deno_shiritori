@@ -24,6 +24,10 @@ serve(async (req) => {
     if (nextWord.charAt(nextWord.length - 1)==='ん') {
       　return new Response("「ん」が付いています。", { status: 400 });
     }
+    if (nextWord.match(/^[ぁ-んー　]*$/)) {
+    } else {
+      return new Response("ひらがなではありません。", { status: 400 });
+    }
 
     previousWord = nextWord;
     return new Response(previousWord);
