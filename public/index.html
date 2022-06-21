@@ -6,13 +6,10 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<div class="audio_wrap">
-  <div class="audio_button">
-  </div>
-  <audio src="しゅわしゅわハニーレモン350ml_2.mp3" loop>
-　</audio>  
-</div>
-  
+<p class="btn"><a onclick="sound()">🔘</a></p>
+<audio id="sound" preload="auto">
+    <source src="しゅわしゅわハニーレモン350ml_2.mp3" type="audio/mp3">
+</audio>
 
 <body>
   <header>
@@ -83,21 +80,20 @@
             para.innerText = `前の単語：${previousWord}`;
   　};
   </script>
+    
   <script>
-    $(function () {
-      var audioBtn = $('.audio_button'),
-          audioWrap = $('.audio_wrap'),
-          audio = document.getElementById('audio');
-      audioBtn.on('click', function () {
-        if( audioWrap.hasClass('play') ) {
-          audio.pause();
-          audioWrap.removeClass('play');
-        } else {
-          audio.play();
-          audioWrap.addClass('play');
-        }
-      });
+ (function (window, $) {
+  'use strict';
+  $.fn.useSound = function (_event, _id) {
+    var se = $(_id);
+    this.on(_event, function(){
+      se[0].currentTime = 0;
+      se[0].play();
     });
+    return this;
+  };
+})(this, this.jQuery);
+$('.btn a').useSound('mousedown touchstart', '#sound');
  </script>
 </body>
 
